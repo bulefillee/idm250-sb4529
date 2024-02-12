@@ -2,7 +2,7 @@
 <nav class="nav">
     <div class="container">
         <div class="logo">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Your Logo</a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">K T</a>
         </div>
         <div id="mainListDiv" class="main_list">
         <ul class="navlinks">

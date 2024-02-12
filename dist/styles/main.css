@@ -78,7 +78,7 @@ header {
 .nav div.logo a {
     text-decoration: none;
     color: #a86b6b;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .nav div.logo a:hover {
@@ -110,7 +110,7 @@ header {
     text-decoration: none;
     color: #a86b6b;
     line-height: 65px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .nav div.main_list ul li a:hover {
@@ -163,7 +163,7 @@ header {
     .nav div.main_list ul li a {
         text-align: center;
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 20px;
     }
     .nav div.media_button {
