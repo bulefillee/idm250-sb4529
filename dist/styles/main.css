@@ -21,7 +21,7 @@
 
 html,
 body {
-  padding-top: 200px;
+  margin-top: 2rem;
   background-color: #fff;
   color: #9e705f;
   font-family: 'Muli', sans-serif;
@@ -225,6 +225,25 @@ header {
     background-color: #111;
 }
 
+/*Single page style*/
+
+.single-page-content{
+    margin-top: 2rem;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+
+.event-div{
+    margin: 2rem;
+    border: 2px solid black;
+    background-color:var(--creamcolor);
+}
 
 
 
