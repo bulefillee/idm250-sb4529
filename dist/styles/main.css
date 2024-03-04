@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;400&family=Philosopher:wght@400;700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+
 
 
 * {
@@ -238,13 +240,139 @@ header {
     overflow-x: hidden;
 }
 
-
-.event-div{
-    margin: 2rem;
-    border: 2px solid black;
-    background-color:var(--creamcolor);
+h1 {
+	font-size: 2rem;
 }
 
+h2 {
+    font-weight: bold;
+    margin: 0.8rem;
+	font-size: 1.5rem;
+}
+
+h3 {
+ 
+     margin: 0.8rem;
+	font-size: 1rem;
+}
+
+h4{
+      margin: 0.8rem;
+	font-size: 1rem;
+      font-style: italic;
+}
+
+
+h5{
+     margin: 0.8rem;
+     font-size: 0.8rem;
+}
+
+h6 {
+    text-decoration: underline;
+     margin: 0.8rem;
+     font-size: 0.8rem;
+}
+
+
+.event-div{
+    border-radius: 0.8rem;
+    padding:1rem;
+    margin: 2rem;
+    background-color:#F7C9B6;
+}
+
+.ordered-list ol{
+    counter-reset: item;
+    margin: 0;
+    padding-left: 0;
+}
+
+.ordered-list > li {
+    counter-increment: item;
+    list-style: none inside;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #404040;
+    margin: 0;
+    padding: 12px 0;
+}
+
+.ordered-list > li:before {
+    content: counter(item);
+    margin-left: 2rem;
+    margin-right:-1rem;
+    padding: 4px;
+    display: block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    background: #c08383;
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+    float:left;
+}
+
+
+.ul-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ul-list > li {
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.ul-list > li:before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+}
+
+.boxed-icon-quote {
+  font-size: 1.4em;
+  width: 60%;
+  margin: 50px auto;
+  font-family: Open Sans;
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 8px solid var(--blushcolor);
+  line-height: 1.6;
+  position: relative;
+  background: #EDEDED;
+}
+
+.boxed-icon-quote::before {
+  font-family: Arial;
+  content: "\201C";
+  color:var(--blushcolor);
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+.boxed-icon-quote::after {
+  content: '';
+}
+
+.boxed-icon-quote span {
+  display: block;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1em;
+}
 
 
   footer {
@@ -260,4 +388,56 @@ header {
       padding: 1rem;
       margin-top: 100px;
    }
+
+   .error-box{ 
+    background-color: #d6bdcf; 
+    color: #fff;
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 75px;
+  }
   
+  .button {
+    background-color:black;
+    color:white;
+    border-radius: 0.5rem;
+    border:none;
+    padding: 8px 16px;
+    margin:1rem;
+    box-shadow: #3C3C3C;
+    box-shadow: 0px 3px 0px rgba(60, 60, 60, 1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color:rgb(219, 189, 214);
+    color: #fff;
+  }
+
+  .button a {
+    text-decoration: none;
+    text-align: center;
+    width: 100%; 
+  }
+  
+  
+  p {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 100;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 15em;
+    font-weight: 100;
+   text-shadow: #b784a7 1px 1px, #b784a7 2px 2px, #b784a7 3px 3px, #b784a8 4px 4px, #b784a8 5px 5px, #b784a8 6px 6px, #b784a8 7px 7px, #b784a9 8px 8px, #b885a9 9px 9px, #b885a9 10px 10px, #b885a9 11px 11px, #b885aa 12px 12px, #b885aa 13px 13px, #b885aa 14px 14px, #b885aa 15px 15px, #b885ab 16px 16px, #b886ab 17px 17px, #b886ab 18px 18px, #b886ab 19px 19px, #b886ac 20px 20px, #b886ac 21px 21px, #b886ac 22px 22px, #b886ac 23px 23px, #b886ad 24px 24px, #b987ad 25px 25px, #b987ad 26px 26px, #b987ad 27px 27px, #b987ae 28px 28px, #b987ae 29px 29px, #b987ae 30px 30px, #b987ae 31px 31px, #b987af 32px 32px, #b988af 33px 33px, #b988af 34px 34px, #b988af 35px 35px, #b988b0 36px 36px, #b988b0 37px 37px, #b988b0 38px 38px, #b988b0 39px 39px, #b988b1 40px 40px, #b989b1 41px 41px, #b989b1 42px 42px, #b989b1 43px 43px, #b989b2 44px 44px, #b989b2 45px 45px, #b989b2 46px 46px, #b989b2 47px 47px, #b989b3 48px 48px, #b98ab3 49px 49px, #b98ab3 50px 50px, #b98ab3 51px 51px, #b98ab4 52px 52px, #b98ab4 53px 53px, #b98ab4 54px 54px, #b98ab4 55px 55px, #b98ab5 56px 56px, #b98bb5 57px 57px, #b98bb5 58px 58px, #b98bb5 59px 59px, #b98bb5 60px 60px, #b98bb6 61px 61px, #b98bb6 62px 62px, #b98bb6 63px 63px, #b98bb6 64px 64px, #b98bb7 65px 65px, #b98cb7 66px 66px, #b98cb7 67px 67px, #b98cb7 68px 68px, #b98cb8 69px 69px, #b98cb8 70px 70px, #b98cb8 71px 71px, #b98cb8 72px 72px, #b98cb9 73px 73px, #b98db9 74px 74px, #b98db9 75px 75px, #b98db9 76px 76px, #b98dba 77px 77px, #b98dba 78px 78px, #b98dba 79px 79px, #b98dba 80px 80px, #b98dbb 81px 81px, #b98ebb 82px 82px, #b98ebb 83px 83px, #b98ebb 84px 84px, #b98ebc 85px 85px, #b98ebc 86px 86px, #b98ebc 87px 87px, #b98ebc 88px 88px, #b98ebd 89px 89px, #b98fbd 90px 90px, #b98fbd 91px 91px, #b98fbd 92px 92px, #b98fbe 93px 93px, #b98fbe 94px 94px, #b98fbe 95px 95px, #b98fbe 96px 96px, #b98fbf 97px 97px, #b990bf 98px 98px, #b990bf 99px 99px, #b990c0 100px 100px, #b990c0 101px 101px, #b990c0 102px 102px, #b990c0 103px 103px, #b990c1 104px 104px, #b991c1 105px 105px, #b991c1 106px 106px, #b991c1 107px 107px, #b991c2 108px 108px, #b991c2 109px 109px, #b991c2 110px 110px, #b991c2 111px 111px, #b991c3 112px 112px, #b992c3 113px 113px, #b992c3 114px 114px, #b992c3 115px 115px, #b992c4 116px 116px, #b992c4 117px 117px, #b992c4 118px 118px, #b992c4 119px 119px, #b993c5 120px 120px, #b993c5 121px 121px, #b993c5 122px 122px, #b993c5 123px 123px, #b993c6 124px 124px, #b993c6 125px 125px, #b993c6 126px 126px, #b993c6 127px 127px;
+
+  }
