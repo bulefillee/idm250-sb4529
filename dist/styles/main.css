@@ -554,7 +554,7 @@ box-shadow: 0 0 0 2px var(--sagegreen), 2px 8px 0 0 var(--sagegreen);
     color:white;
     border-radius: 0.5rem;
     border:none;
-    padding:1rem;
+    padding:0.5rem;
     margin:1rem;
     cursor: pointer;
   }
@@ -974,3 +974,9 @@ a:hover {
 a:active {
   color:#000000;
 }
+
+/* References : 
+
+Numbered circles styles referenced from Code pen by  Dusko Stamenic
+
+404 page styles referenced from Code pen by Ricardo Prieto */
