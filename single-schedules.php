@@ -26,7 +26,9 @@
          <?php echo $featured_image; ?>
      <?php endif; ?>
  </div>
- 
+ <h1>
+  <?php echo get_the_title(); ?>
+</h1>
  <?php echo get_the_content(); ?>
  
 <!--<p>This is a custom schedule page Day1&Day2 template.</p>-->
