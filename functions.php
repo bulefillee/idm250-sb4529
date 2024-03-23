@@ -1,31 +1,33 @@
 <?php
 
-function theme_scripts_and_styles()
-{
-    // Enqueue a custom script
+/**
+ * Theme initialization
+ */
+require get_template_directory() . '/includes/setup.php';
 
-    // Enqueue jQuery from Google CDN
-     wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), '3.1.1', true);
-    
-    
-    // wp_enqueue_script('idm-tailwind-script', 'https://cdn.tailwindcss.com');
-    wp_enqueue_script('idm-main-script', get_template_directory_uri() . '/dist/scripts/main.js', [], false, ['in_footer' => true]);
+/**
+ * Register custom post types
+ */
+require get_template_directory() . '/includes/post-types.php';
 
-    // Enqueue a custom style
-    // wp_enqueue_style('idm-normalize', 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
-    wp_enqueue_style('idm-main-style', get_template_directory_uri() . '/dist/styles/main.css');
+/**
+ * Register custom taxonomies
+ */
+// require get_template_directory() . '/includes/taxonomies.php';
 
-}
+/**
+ * Custom Helper functions
+ */
+require get_template_directory() . '/includes/helper.php';
 
-add_action('wp_enqueue_scripts', 'theme_scripts_and_styles');
+// add sidebar and widget
+// function add_widgets()
+// {
+//     register_sidebar([
+//         'name' => 'Main Sidebar',
+//         'id' => 'main_sidebar',
+//     ]);
+// }
+// add_action('widgets_init', 'add_widgets');
 
-function register_theme_menus()
-{
-    register_nav_menus([
-        'primary' => 'Primary Menu',
-        'footer' => 'Footer Menu',
-        '404-menu' => '404 Menu'
-    ]);
-}
-add_action('init', 'register_theme_menus');
-
+// New content end

@@ -1,11 +1,17 @@
-<?php get_header(); ?>
-<h1>
-  <?php echo get_the_title(); ?>
-</h1>
+<?php
+/* Template Name: Page with schedule */
+ get_header(); ?>
 
-<div class="single-page-content">
-<?php echo get_the_content(); ?> 
-</div>
+    <h1>
+        <?php echo get_the_title(); ?> <!---Gets title from page-->
+    </h1>
 
-<p>This is a single.php template</p>
+  
+    <?php
+
+  echo get_the_content();
+
+    ?>
+    <!---<p> This is singe template.</p>-->
+
 <?php get_footer(); ?>
